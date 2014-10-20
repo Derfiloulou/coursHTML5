@@ -3,7 +3,10 @@
 	<head>
 		<meta charset = "UTF-8">
 		<title> Cours HTML5 </title>
-		<!-- <link rel ="stylesheet" type="text/css" href="path/style.css"> -->
+		<link rel ="stylesheet" type="text/css" href="css/base.css">
+		<link rel ="stylesheet" type="text/css" href="css/scene.css">
+		<link rel ="stylesheet" type="text/css" href="css/gui.css">
+		<link rel ="stylesheet" type="text/css" href="css/info.css">
 	</head>
 	
 	<body>
@@ -11,12 +14,7 @@
 			
 			<!-- INGAME -->
 			<div class="scene-view">
-				
-				<!-- BACKGROUND -->
-				<div id = "background"></div>
-				
-				<!-- JOUEURS -->
-				<div class="scene-view"> 
+				<div class="scene">
 					<div class = "character player" id="player1"></div>
 					<div class = "character enemy" id="enemy1"></div>
 					<div class = "character enemy" id="enemy2"></div>
@@ -44,8 +42,8 @@
 						
 						<!-- JOUEUR -->				
 					
-						<div id="player-name"> PLAYER_NAME</div>
-						<div id="player-class">PLAYER_CLASS</div>
+						<div id="player-name"></div>
+						<div id="player-class"></div>
 						<div id="player-rank">
 							<div class="player-rank-indic"></div>
 						</div>
@@ -68,9 +66,6 @@
 					
 					<div class="menu-content" id="equipement" ></div>
 					<div class="menu-content" id="stats"></div>
-						
-						
-					
 				</div>
 			</div>
 		</div>

@@ -1,0 +1,54 @@
+.gui{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-290px;
+	margin-left:-390px;
+	overflow:hidden;
+	font-size : 12px;
+}
+
+.window{
+	color : white;
+	cursor : default;
+	
+}
+
+.menu-content{
+	width : 400px;
+	height : 350px;
+	float:left;
+	background-color:rgba(0,40,100,0.9);
+	border: rgba(255,255,255,0.8) solid 3px;
+	display:none;
+}
+
+#menu-list{
+	list-style-image : url(../img/images/icon-xp-small.png);
+	width : 160px;
+	height : 350px;
+	float:left;
+	background-color:rgba(0,70,150,0.9);
+	border: rgba(255,255,255,0.7) solid 3px;
+	border-right:none;
+	list-style-position: inside;
+	
+}
+
+#menu-list li{
+	padding : 10px;
+	border-bottom: rgba(255,255,255,0.7) solid 3px;
+}
+
+#menu-list li:hover{
+	background-color:rgba(0,200,255,0.7);
+}
+
+#menu-list ul{
+	margin : 0px;
+	padding : 0px;
+}
+
+#infos{
+	display:block;
+}

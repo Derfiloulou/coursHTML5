@@ -1,0 +1,53 @@
+#screen {
+	width: 800px;
+	height: 600px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-300px;
+	margin-left:-400px;
+	overflow:hidden;
+	
+}
+
+#player1{
+	background-image : url(../img/idle-2-2-2.png);
+	width: 128px;
+	height: 128px;
+	position:absolute;
+	top:1740px;
+	left:3685px;
+	margin-top:-64px;
+	margin-left:-64px;
+}
+
+#enemy1{
+	background-image : url(../img/idle-1.png);
+	width: 128px;
+	height: 128px;
+	position:absolute;
+	top:1690px;
+	left:3885px;
+	margin-top:-64px;
+	margin-left:-64px;
+}
+
+#enemy2{
+	background-image : url(../img/idle-1.png);
+	width: 128px;
+	height: 128px;
+	position:absolute;
+	top:1790px;
+	left:3885px;
+	margin-top:-64px;
+	margin-left:-64px;
+}
+
+.scene{
+	background-image : url(../img/forest.jpg);
+	width:4096px;
+	height:2037px;
+	position:absolute;
+	top:-1340px;
+	left:-3285px;
+}
