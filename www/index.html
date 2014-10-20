@@ -1,5 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head></head>
-<div>Hello World</div>
+	<head>
+		<meta charset = "UTF-8">
+		<title> Cours HTML5 </title>
+		<!-- <link rel ="stylesheet" type="text/css" href="path/style.css"> -->
+	</head>
+	
+	<body>
+		<div id="screen">
+			
+			<!-- INGAME -->
+			<div class="scene-view">
+				
+				<!-- BACKGROUND -->
+				<div id = "background"></div>
+				
+				<!-- JOUEURS -->
+				<div class="scene-view"> 
+					<div class = "character player" id="player1"></div>
+					<div class = "character enemy" id="enemy1"></div>
+					<div class = "character enemy" id="enemy2"></div>
+					<div class = "character enemy" id="enemy3"></div>
+					<div class = "character enemy" id="enemy4"></div>	
+				</div>
+			</div>
+			
+			<!-- FENETRE -->
+			<div class = "gui">
+				
+				<div class="window" id="main-window">
+				
+					<!-- MENU -->
+					<div id = "menu-list">
+						<ul>
+							<li class="selected">INFOS</li>
+							<li>EQUIPEMENT</li>
+							<li>STATISTIQUES</li>
+						</ul>
+					</div>
+					
+					<!-- CONTENU MENU -->
+					<div class = "menu-content" id="infos">
+						
+						<!-- JOUEUR -->				
+					
+						<div id="player-name"> PLAYER_NAME</div>
+						<div id="player-class">PLAYER_CLASS</div>
+						<div id="player-rank">
+							<div class="player-rank-indic"></div>
+						</div>
+						
+					
+						<!-- IMAGE AVATAR -->
+						<div class="player-review"></div>
+				
+						<!-- STATS -->
+						
+						<dl>
+							<dt>XP</dt
+							<dd class = "xp"> 42 </dd>
+							<dt>HP</dt
+							<dd class = "hp"> 42 </dd>
+							<dt>POWER</dt
+							<dd class = "power"> 42 </dd>
+						</dl>
+					</div>
+					
+					<div class="menu-content" id="equipement" ></div>
+					<div class="menu-content" id="stats"></div>
+						
+						
+					
+				</div>
+			</div>
+		</div>
+	</body>
+	
 </html>
