@@ -42,8 +42,8 @@
 						
 						<!-- JOUEUR -->				
 					
-						<div id="player-name"></div>
-						<div id="player-class"></div>
+						<div id="player-name">MINOUCHE</div>
+						<div id="player-class">DANSEUSE ETOILE</div>
 						<div id="player-rank">
 							<div class="player-rank-indic"></div>
 						</div>
@@ -55,18 +55,26 @@
 						<!-- STATS -->
 						
 						<dl>
-							<dt>XP</dt
-							<dd class = "xp"> 42 </dd>
-							<dt>HP</dt
-							<dd class = "hp"> 42 </dd>
-							<dt>POWER</dt
-							<dd class = "power"> 42 </dd>
+							<dt>XP</dt>
+							<dd class = "xp"> 99999 </dd>
+							<dt>HP</dt>
+							<dd class = "hp"> 9999 </dd>
+							<dt>POWER</dt>
+							<dd class = "power"> 999 </dd>
 						</dl>
 					</div>
 					
 					<div class="menu-content" id="equipement" ></div>
 					<div class="menu-content" id="stats"></div>
 				</div>
+				<script>
+				function switchWindow(){
+				var win = document.getElementById("main-window");
+				win.className = (win.className == "window enabled")
+					?"window":"window enabled";
+				}
+				</script>
+				<button id="menu-switch" onclick="switchWindow()">MENU</button>
 			</div>
 		</div>
 	</body>

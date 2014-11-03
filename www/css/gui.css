@@ -1,17 +1,39 @@
 .gui{
-	position:absolute;
-	top:50%;
-	left:50%;
-	margin-top:-290px;
-	margin-left:-390px;
-	overflow:hidden;
-	font-size : 12px;
+	
 }
 
 .window{
+	position:absolute;
+	top:4%;
+	left:52%;
+	overflow:hidden;
+	font-size : 12px;
+	text-shadow: 
+	black 1px 1px, 
+	black -1px 1px, 
+	black -1px -1px, 
+	black 1px -1px;
 	color : white;
+	width : 610px;
 	cursor : default;
+	opacity : 1;
+	margin-left: 100%;
+	transform : scale(0);
+	transition : all 500ms cubic-bezier(0.5, 1.5, 0.5, 1);
+}
+
+#menu-switch{
+	position : absolute;
+	bottom : 10px;
+	left : 10px;
 	
+	
+}
+
+.window.enabled{
+	opacity : 1;
+	margin-left: -390px;
+	transform : scale(1);
 }
 
 .menu-content{
@@ -23,15 +45,115 @@
 	display:none;
 }
 
+#player-name{
+padding-top : 10px;
+font-size : 28px;
+text-align : center;
+text-shadow: 
+black 1px 1px, 
+black -1px 1px, 
+black -1px -1px, 
+black 1px -1px,
+white 0 0 15px; 
+
+}
+
+#player-class{
+font-style : italic;
+font-size : 18px;
+color : yellow;
+text-align : center;
+padding-top : 2px;
+}
+
+.player-review{
+position : absolute;
+margin-top : 24px;
+background-image : url(../img/selection-2-2-2.png);
+width : 400px;
+height : 190px;
+background-repeat : no-repeat;
+background-position : center -65px;
+}
+
+#player-rank{
+position : absolute;
+background-image : url(../img/images/icon-star-off.png);
+width : 70px;
+height : 14px;
+margin-left : 160px;
+margin-top : 8px;
+margin-bottom : 5px;
+}
+
+.player-rank-indic{
+position : absolute;
+background-image : url(../img/images/icon-star-on.png);
+width : 60%;
+height : 14px;
+}
+
+.menu-content dl{
+font-size : 14px;
+position : absolute;
+width : 150px;
+margin : 0 0 0 10px;
+bottom : 5px;
+}
+
+.menu-content dt{
+float : left;
+padding-bottom : 5px;
+margin : 0;
+}
+
+.menu-content dd{
+text-align:right;
+padding-bottom : 5px;
+margin : 0;
+
+}
+
+#infos dt:after{
+	content : " :";
+}
+
+.xp{
+color : #00CCCC;
+background-image : url(../img/images/icon-xp-small.png);
+background-repeat : no-repeat;
+background-position : right 0;
+padding-right : 20px;
+text-decoration : none;
+}
+
+.hp{
+color :  #CC3333;
+background-image : url(../img/images/heart.png);
+background-repeat : no-repeat;
+background-position : right 0;
+padding-right : 20px;
+}
+
+.power{
+color : #FFFF33;
+background-image : url(../img/images/icon-ep-small.png);
+background-repeat : no-repeat;
+background-position : right 0;
+padding-right : 20px;
+}
+
+
 #menu-list{
-	list-style-image : url(../img/images/icon-xp-small.png);
-	width : 160px;
+	list-style-image : url(../img/images/footer-decoration-left-animation-v.gif);
+	width : 200px;
 	height : 350px;
 	float:left;
 	background-color:rgba(0,70,150,0.9);
 	border: rgba(255,255,255,0.7) solid 3px;
 	border-right:none;
 	list-style-position: inside;
+	font-size : 16px;
 	
 }
 
@@ -49,6 +171,11 @@
 	padding : 0px;
 }
 
+.selected{
+	background-color:rgba(0,200,255,0.5);
+}
+
 #infos{
 	display:block;
 }
+
